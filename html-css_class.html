@@ -1,0 +1,90 @@
+<!-- Header
+<h1>3/11 Class</h1>
+<p><em>기울임</em></p>
+<p><strong>볼드체</strong></p>
+
+Ordered list: 순서 목록 표시
+<ol>
+	<li>일</li>
+	<li>이</li>
+Unordered list: 비순서 목록 표시
+		<ul>
+			<li>일</li>
+			<li>이</li>
+		</ul>
+	<li>삼</li>
+</ol>
+
+Definition list: 정의 목록 표시(주종 관계 표시에 사용)
+<dl>
+	Definition Term
+	<dt>HTML</dt>
+	Definition Description
+	<dd>웹페이지에서 콘텐츠의 구조를 표현하기 위해 고안된 텍스트 포맷</dd>
+	code: 코드 나타낼때 사용
+	<dd>코드 태그: <code>GET</code>, <code>Post</code></dd>
+</dl>
+
+특수기호: &lt; - <, &gt; - >, &nbsp; - 공백 
+<pre>
+	<code>&lt;HTML&gt;</code>
+	<code>&nbsp;공백&nbsp;공백&nbsp;공백&nbsp;</code>
+</pre>
+
+<a href=""></a>: 링크 태그
+<a href="https://www.naver.com">네이버로 이동</a> -->
+
+<!-- Header
+Ordered list: 순서 목록 표시
+Unordered list: 비순서 목록 표시
+Definition list: 정의 목록 표시(주종 관계 표시에 사용)
+Definition Term
+Definition Description
+code: 코드 나타낼때 사용
+특수기호: &lt; - <, &gt; - >, &nbsp; - 공백 
+<a href=""></a>: 링크 태그 -->
+
+<!-- div: 특정 요소의 의미를 담지않는 태그, 중립적인 태그, 생성된 요소를 묶는 역할, 줄바꿈을 함, 블럭 요소
+span: div와 동일하며 줄바꿈을 하지 않음, 인라인 요소-->
+
+<!-- 블럭 요소: 줄바꿈을 함. width/height값을 가질 수 있음. 다른 블럭 요소 포함 가능 e.g.)p, div. ul, ol, li, h
+인라인 요소: 줄바꿈을 하지 않음. width/height값을 가질 수 없음. 다른 인라인 요소를 포함가능 하나 블럭 요소는 포함 불가 e.g.)a, span, strong, bold -->
+ 
+<!-- * 폰트
+font-family: 다수의 폰트체를 입력 가능. 그 중 활용할 수 있는 폰트체를 사용
+font-weight: 폰트 두께
+font-style: 글자 스타일 지정 e.g.) italic; normal; 등
+rem: 최상단 html의 상대적인 크기가 정해짐
+em: 상이 요소에 의해 크기가 정해짐. 상대적인 font-size값 표현할 떄 사용. li 태그 등에서 중복 이슈 있음 -->
+<!-- * 텍스트
+text-align: 텍스트 정렬
+line-height: 줄간격. 기본값은 1 or 2 -->
+<!-- * 색상
+color: 색상 지정. 컬러 코드로 표현 가능 #ffffff(흰색), #000000(검은색)
+background-color: 배경색 지정 -->
+
+<!-- * 박스 모델
+1. content: 글/이미지 등 실제 내용이 포함되는 부분. width/height 등으로 크기 지정 가능
+2. padding(안쪽 여백): 배경색 또는 배경이미지가 지정되는 부분.
+3. border(테두리): 
+4. margin(바깥쪽 여백): 박스 두개가 수직으로 차례로 있을 경우 margin값의 중복/상쇄가 일어나 한 박스의 크기가 사이값으로 지정됨. e.g.)margin: 30px; 일 경우 두 박스 사이의 간격은 30px임
+box-sizing: border-box; 테두리 영역까지 박스사이즈로 포함시킴. 기본은 콘텐트 -->
+
+<!-- normal flow를 벗어나 복잡한 방식의 레이아웃을 배치하는 방법
+1. float: 이미지 옆에 글이 이미지 공간을 비우고 흘러내릴 수 있도록 설정 e.g.)위키피디아 인물정의(인물사진+내용)
+2. position:
+ - static;(기본), relative(static인 상태를 기준으로 주어진 픽셀만큼 이동): 기본적인 구조의 변경 없이 상대적위 위치 지정(자신의 원래 자리는 남아 있음), absolute: 문서의 원래 위치와 상관없이 위치 지정 가능. 하지만 가장 가까운 상위 요소를 기준으로(단, static은 제외) 위치가 결정되며, 상위 요소가 없으면 위치는 html 기준으로 설정됨. 기본적인 구조의 변경이 일어남(자신의 원래 자리가 없어짐). 스크롤을 내릴 경우 따라서 내려감, fixed: 브라우저 화면의 상대적인 위치. 스크롤을 내려도 따라서 내려가지 않음
+ -->
+
+<!-- 선택자 selector
+1. class-selector: 가장 범용적인 selector. 중복적으로 사용 가능. 띄워쓰기 해서 class명 여러개 중복적 사용 가능
+				   클래스 선택자의 경우 속성값 앞에 .(마침표)를 추가해서 CSS 작성
+2. tag-selector: a, ul, li, div, p 등 태그를 일괄적으로 변경하기 위해 사용
+3. id-selector: 가장 구체적인 스타일 적용을 위해 사용. id별 스타일 적용. 중복적으로 사용 불가능
+				   id 선택자의 경우 속성값 앞에 #를 추가해서 CSS 작성
+- 우선 순위: id > class > tag. id-selector가 우선 순위가 가장 높음
+
+가상선택자: ul/li의 마지막 요소, 링크에 마우스오버할때 등 가상 상황별 스타일 적용
+가상요소: 선택할 수 없는 h요소 앞 등 가상 요소별 스타일 적용
+
+** id 선택자의 구체성 값: 100점, class 선택자&가상 선택자의 구체성 값: 10점, 태그 선택자&가상요소의 구체성 값: 1점 -> 상황별 구체성 값이 높은 것이 우선순위로 스타일 적용됨 -->

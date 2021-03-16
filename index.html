@@ -1,0 +1,161 @@
+<!DOCTYPE html>      <!--문서 type 선언-->
+<html lang="en">     <!--root 요소-->
+<head>               <!--문서의 기본 설정: 표시되지는 않음-->
+    <meta charset="UTF-8">      <!--인코딩 언어 반드시 설정-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">       <!--호환성보기-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--반응형 웹사이트 태그: Device 화면에 맞게 내용 표시-->
+    <title>The Web framework for perfectionists with deadlines | Django</title>     <!--Title: 문서의 제목-->
+    <link rel="stylesheet" href="./style.css">      <!-- rel: 연결할 파일을 알려줌, href: 연결 파일 위치-->
+    <link rel="stylesheet" href="./normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 상대요소: 지금 현재 내 위치에서의 파일 위치 e.g.) ./ -->
+    <!-- 절대요소: e.g.) C:\Users\...--> 
+    <!-- CSS reset: 브라우저 agent 스타일 초기화함 -->
+    <!-- CSS normalize: 브라우저 agent 스타일의 오차를 최소화하여 보정함 -->
+    <title>The Web framework for perfectionists with deadlines | Django</title>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- h1.logo : h1의 logo 클래스를 생성 -->
+        <h1 class="logo">
+          <img
+            src="https://static.djangoproject.com/img/logo-django.42234b631760.svg"
+            alt="Django"
+          />
+        </h1>
+        <nav class="nav">
+          <ul class="list">
+             <!-- (li>a)*8 : li요소 아래 a요소를 8개 생성-->
+            <li class="list-item"><a href="#">Overview</a></li>
+            <li class="list-item"><a href="#">Download</a></li>
+            <li class="list-item"><a href="#">Documentation</a></li>
+            <li class="list-item"><a href="#">News</a></li>
+            <li class="list-item"><a href="#">Community</a></li>
+            <li class="list-item"><a href="#">Code</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+            <li class="list-item"><a href="#">♥ Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="hero-section">
+        <div class="container">
+          <p class="intro-desc">
+            Django makes it easier to build better web apps more quickly and with less code.
+          </p>
+          <a href="#" class="cta hero-cta">
+            Get started with Django
+          </a>
+        </div>
+      </div>
+      <div class="container-float">
+        <div class="main-content">
+          <h2 class="main-title">Stay in the loop</h2>
+          <p class="main-desc">Subscribe to one of our mailing lists to stay up to date with everything in the Django community:</p>
+          <div class="mailing-layout">
+            <div class="mailing">
+              <h3 class="mailing-title">
+                <a href="#">Using Django</a>
+              </h3>
+              <p class="mailing-desc">Get help with Django and follow announcements</p>
+              <!-- form 요소 -->
+              <form action="#" class="mailing-form">
+                <label for="input-following">send email for following news</label>
+                <!--input 요소 -> placeholder: 회색 안내 문구, id: 웹페이지 안에서만 활용. 중복X, name: 입력값을 서버로 전송할 때 전달하는 파라미터로 사용. 중복O-->
+                <input type="email" placeholder="Enter email" id="input-following" name="input-following"> 
+                <button type="submit" class="mailing-form-btn">Submit</button>
+              </form>
+              <p class="mailing-desc">
+                You can also subscribe by sending an email to
+                <a href="mailto:django-users+subscribe@googlegroups.com"
+                  >django-users+subscribe@googlegroups.com</a
+                >
+                and following the instructions that will be sent to you.
+              </p>
+            </div>
+            <div class="mailing">
+              <h3 class="mailing-title">
+                <a href="#">Contributing to Django</a>
+              </h3>
+              <p class="mailing-desc">Contribute to the development of Django itself</p>
+              <!-- form 요소 -->
+              <form action="#" class="mailing-form">
+                <label for="email-contribute">send email for contribution</label>
+                <input type="email" placeholder="Enter email" id="email-contribute" name="email-contribute"> <!--placeholder: 회색 안내 문구, name: 입력값을 서버로 전송할 때 사용하는 값-->
+                <button type="submit" class="mailing-form-btn">Submit</button>
+              </form>
+              <p class="mailing-desc">
+                Before asking a question about how to contribute, read
+                <a
+                  href="https://docs.djangoproject.com/en/dev/internals/contributing/"
+                  >Contributing to Django</a
+                >. Many frequently asked questions are answered there.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="side-content">
+          <div class="container-side-cta">
+            <a href="#" class="cta side-cta">
+              Download <em>latest release: 2.1.7</em>
+            </a>
+            <a href="#" class="more">
+              DJANGO DOCUMENTATION
+            </a>
+          </div>
+          <div class="latest-news infos">
+            <h2 class="infos-title">
+              Latest news
+            </h2>
+            <article class="news-article">
+              <h3 class="news-title">
+                <a href="#">
+                  Django bugfix releases: 2.1.7, 2.0.12 and 1.11.20
+                </a>
+              </h3>
+              <p class="news-desc">
+                Today the Django project issued bugfix releases for the 2.1, 2.0 and 1.11 release series.
+              </p>
+              <p class="news-meta">
+                posted by <span>Carlton Gibson</span> on <time datetime="2019-02-11">2월 11, 2019</time>
+              </p>
+            </article>
+            <a href="#" class="more">
+              MORE NEWS
+            </a>
+          </div>  
+          <div class="get-involved infos">
+            <h2 class="infos-title">
+              Get involved
+            </h2>
+            <dl class="list-communities">
+              <dt class="community-title">
+                <a href="#">
+                  #django IRC channel
+                </a> 
+              </dt>
+              <dd class="community-desc">
+                Chat with other Django users
+              </dd>
+              <dt class="community-title">
+                <a href="#">
+                  Ticket system
+                </a> 
+              </dt>
+              <dd class="community-desc">
+                Report bugs and make feature requests
+              </dd>              
+            </dl>
+            <a href="#" class="more">
+              INSIDE THE DJANGO COOMUNITY
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">푸터</footer>
+  </body>
+</html>
